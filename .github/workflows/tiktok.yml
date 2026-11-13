@@ -47,6 +47,9 @@ jobs:
           mkdir -p "$TIKTOK_DATEN"
           cp sync/uebertragen.json "$TIKTOK_DATEN/uebertragen.json"
 
+      - name: Anmeldung prüfen
+        run: cd sync && python -c "import tiktok_sync as t; t._access_token(); t._konto_id(); print('TikTok und Instagram ok')"
+
       - name: Lauf
         run: python sync/tiktok_sync.py
 
