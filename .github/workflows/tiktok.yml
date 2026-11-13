@@ -1,10 +1,10 @@
 name: Instagram zu TikTok
 
-# Zweimal täglich neue Instagram-Beiträge und Stories als ENTWURF in den TikTok-Posteingang.
-# Nichts geht automatisch online. Zeiten in UTC: 08:00 und 20:00 = 09:00 und 21:00 Berlin (Winterzeit).
+# Alle 3 Stunden zwischen 09:00 und 21:00 neue Instagram-Beiträge und Stories als ENTWURF in den TikTok-Posteingang.
+# Nichts geht automatisch online. Zeiten in UTC: 08, 11, 14, 17, 20 Uhr = 09, 12, 15, 18, 21 Uhr Berlin (Winterzeit).
 on:
   schedule:
-    - cron: "0 8,20 * * *"
+    - cron: "0 8,11,14,17,20 * * *"
   workflow_dispatch:
 
 permissions:
