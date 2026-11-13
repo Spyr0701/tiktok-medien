@@ -1,0 +1,62 @@
+{
+ "start": "2026-11-09T06:03:39+00:00",
+ "medien": {
+  "18654052027050965": {
+   "art": "beitrag",
+   "zeit": "2026-11-10T12:52:09+0000",
+   "link": "https://www.instagram.com/p/Dfj8vyqgvRe/",
+   "publish_id": "p_inbox_url~v2.7706850432892028950",
+   "status": "fertig",
+   "format": "fotos",
+   "am": "2026-11-11T10:56",
+   "tiktok_status": "SEND_TO_USER_INBOX"
+  },
+  "18103442567388296": {
+   "art": "story",
+   "zeit": "2026-11-10T12:53:15+0000",
+   "link": "https://www.instagram.com/stories/ampullarium.app/4027330230397086930",
+   "publish_id": "v_inbox_file~v2.7706850444395579414",
+   "status": "hochgeladen",
+   "am": "2026-11-11T10:57",
+   "tiktok_status": "PROCESSING_UPLOAD"
+  },
+  "18338755786302674": {
+   "art": "beitrag",
+   "zeit": "2026-11-10T18:46:07+0000",
+   "link": "https://www.instagram.com/reel/DfklIikyUaF/",
+   "publish_id": "v_inbox_file~v2.7706850492290648086",
+   "status": "hochgeladen",
+   "am": "2026-11-11T10:57",
+   "tiktok_status": "PROCESSING_UPLOAD"
+  },
+  "18002678048829955": {
+   "art": "story",
+   "zeit": "2026-11-10T18:49:27+0000",
+   "link": "https://www.instagram.com/stories/ampullarium.app/4027525176027695572",
+   "publish_id": "v_inbox_file~v2.7706850502092408854",
+   "status": "hochgeladen",
+   "am": "2026-11-11T10:57",
+   "tiktok_status": "PROCESSING_UPLOAD"
+  },
+  "18115465646166051": {
+   "art": "beitrag",
+   "zeit": "2026-11-12T18:22:04+0000",
+   "link": "https://www.instagram.com/p/DfpsF_mnFLW/",
+   "publish_id": "p_inbox_url~v2.7707594472066123798",
+   "status": "fertig",
+   "format": "fotos",
+   "am": "2026-11-13T11:03",
+   "tiktok_status": "SEND_TO_USER_INBOX"
+  },
+  "18077481095740408": {
+   "art": "story",
+   "zeit": "2026-11-12T18:25:49+0000",
+   "link": "https://www.instagram.com/stories/ampullarium.app/4028947153552141796",
+   "publish_id": "p_inbox_url~v2.7707594655180949526",
+   "status": "fertig",
+   "format": "fotos",
+   "am": "2026-11-13T11:04",
+   "tiktok_status": "SEND_TO_USER_INBOX"
+  }
+ }
+}

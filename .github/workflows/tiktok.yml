@@ -1,0 +1,62 @@
+name: Instagram zu TikTok
+
+# Zweimal täglich neue Instagram-Beiträge und Stories als ENTWURF in den TikTok-Posteingang.
+# Nichts geht automatisch online. Zeiten in UTC: 08:00 und 20:00 = 09:00 und 21:00 Berlin (Winterzeit).
+on:
+  schedule:
+    - cron: "0 8,20 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tiktok-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TZ: Europe/Berlin
+      TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+      TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+      TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
+      META_IG_TOKEN: ${{ secrets.META_IG_TOKEN }}
+      TIKTOK_MEDIEN_REPO: ${{ github.workspace }}
+      TIKTOK_DATEN: ${{ runner.temp }}/daten
+      TIKTOK_AUSGANG: ${{ runner.temp }}/ausgang
+      TIKTOK_POSTS_CSV: ${{ github.workspace }}/sync/auslassen.csv
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Werkzeuge
+        run: |
+          pip install -q requests pillow
+          command -v ffmpeg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+          git config user.name "tiktok-sync"
+          git config user.email "tiktok-sync@users.noreply.github.com"
+
+      - name: Stand holen
+        run: |
+          mkdir -p "$TIKTOK_DATEN"
+          cp sync/uebertragen.json "$TIKTOK_DATEN/uebertragen.json"
+
+      - name: Lauf
+        run: python sync/tiktok_sync.py
+
+      - name: Stand sichern
+        if: always()
+        run: |
+          cp "$TIKTOK_DATEN/uebertragen.json" sync/uebertragen.json
+          git add sync/uebertragen.json
+          if ! git diff --cached --quiet; then
+            git commit -q -m "Stand $(date +%F_%H%M)"
+            git pull -q --rebase
+            git push -q
+          fi
