@@ -25,8 +25,8 @@ jobs:
       TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
       META_IG_TOKEN: ${{ secrets.META_IG_TOKEN }}
       TIKTOK_MEDIEN_REPO: ${{ github.workspace }}
-      TIKTOK_DATEN: ${{ runner.temp }}/daten
-      TIKTOK_AUSGANG: ${{ runner.temp }}/ausgang
+      TIKTOK_DATEN: /tmp/tiktok/daten
+      TIKTOK_AUSGANG: /tmp/tiktok/ausgang
       TIKTOK_POSTS_CSV: ${{ github.workspace }}/sync/auslassen.csv
     steps:
       - uses: actions/checkout@v4
