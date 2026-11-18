@@ -117,6 +117,53 @@
    "format": "fotos",
    "am": "2026-11-18T02:55",
    "tiktok_status": "SEND_TO_USER_INBOX"
+  },
+  "18118310597152070": {
+   "art": "story",
+   "zeit": "2026-11-18T14:30:55+0000",
+   "link": "https://www.instagram.com/stories/ampullarium.app/4033177664910540906",
+   "publish_id": "p_inbox_url~v2.7709553766269257750",
+   "status": "fertig",
+   "format": "fotos",
+   "am": "2026-11-18T17:46",
+   "tiktok_status": "SEND_TO_USER_INBOX"
+  },
+  "18117343991169474": {
+   "art": "story",
+   "zeit": "2026-11-18T14:30:56+0000",
+   "link": "https://www.instagram.com/stories/ampullarium.app/4033177663308380790",
+   "publish_id": "p_inbox_url~v2.7709553913699371030",
+   "status": "fertig",
+   "format": "fotos",
+   "am": "2026-11-18T17:47",
+   "tiktok_status": "SEND_TO_USER_INBOX"
+  },
+  "18103153568359035": {
+   "art": "story",
+   "zeit": "2026-11-18T14:30:57+0000",
+   "link": "https://www.instagram.com/stories/ampullarium.app/4033177664247939603",
+   "publish_id": "p_inbox_url~v2.7709554065721673750",
+   "status": "fertig",
+   "format": "fotos",
+   "am": "2026-11-18T17:48",
+   "tiktok_status": "SEND_TO_USER_INBOX"
+  },
+  "18130819132870940": {
+   "art": "story",
+   "zeit": "2026-11-18T14:30:58+0000",
+   "link": "https://www.instagram.com/stories/ampullarium.app/4033177665086847082",
+   "publish_id": "p_inbox_url~v2.7709553601781450774",
+   "status": "fertig",
+   "format": "fotos",
+   "am": "2026-11-18T17:48",
+   "tiktok_status": "SEND_TO_USER_INBOX"
+  },
+  "18082033283399506": {
+   "art": "story",
+   "zeit": "2026-11-18T14:30:59+0000",
+   "link": "https://www.instagram.com/stories/ampullarium.app/4033177664273202686",
+   "status": "fehler",
+   "fehler": "TikTok spam_risk_too_many_pending_share: spam_risk_too_many_pending_share"
   }
  }
 }
