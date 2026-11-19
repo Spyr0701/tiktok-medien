@@ -171,6 +171,26 @@
    "link": "https://www.instagram.com/stories/ampullarium.app/4033177665489366815",
    "status": "fehler",
    "fehler": "TikTok spam_risk_too_many_pending_share: spam_risk_too_many_pending_share"
+  },
+  "17977507896188848": {
+   "art": "beitrag",
+   "zeit": "2026-11-19T15:25:24+0000",
+   "link": "https://www.instagram.com/p/Df7ZcGLgqEn/",
+   "publish_id": "p_inbox_url~v2.7709926536266270742",
+   "status": "fehler",
+   "format": "fotos",
+   "am": "2026-11-19T17:53",
+   "tiktok_status": "FAILED"
+  },
+  "18024654020936598": {
+   "art": "story",
+   "zeit": "2026-11-19T15:25:48+0000",
+   "link": "https://www.instagram.com/stories/ampullarium.app/4033929983621093820",
+   "publish_id": "p_inbox_url~v2.7709926694165121046",
+   "status": "fertig",
+   "format": "fotos",
+   "am": "2026-11-19T17:53",
+   "tiktok_status": "SEND_TO_USER_INBOX"
   }
  }
 }
