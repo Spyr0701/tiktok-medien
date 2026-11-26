@@ -348,6 +348,23 @@
    "format": "fotos",
    "am": "2026-11-25T19:19",
    "tiktok_status": "SEND_TO_USER_INBOX"
+  },
+  "18137735374811453": {
+   "art": "story",
+   "zeit": "2026-11-25T17:38:01+0000",
+   "link": "https://www.instagram.com/stories/ampullarium.app/4038345229532732860",
+   "publish_id": "p_inbox_url~v2.7712301849071831062",
+   "status": "fertig",
+   "format": "fotos",
+   "am": "2026-11-26T03:32",
+   "tiktok_status": "SEND_TO_USER_INBOX"
+  },
+  "17883865278543373": {
+   "art": "story",
+   "zeit": "2026-11-25T17:38:02+0000",
+   "link": "https://www.instagram.com/stories/ampullarium.app/4038345230455651093",
+   "status": "fehler",
+   "fehler": "TikTok spam_risk_too_many_pending_share: spam_risk_too_many_pending_share"
   }
  }
 }
