@@ -365,6 +365,13 @@
    "link": "https://www.instagram.com/stories/ampullarium.app/4038345230455651093",
    "status": "fehler",
    "fehler": "TikTok spam_risk_too_many_pending_share: spam_risk_too_many_pending_share"
+  },
+  "18100462931444265": {
+   "art": "beitrag",
+   "zeit": "2026-11-26T16:16:43+0000",
+   "link": "https://www.instagram.com/p/DgNg4LGgmGd/",
+   "status": "fehler",
+   "fehler": "TikTok spam_risk_too_many_pending_share: spam_risk_too_many_pending_share"
   }
  }
 }
