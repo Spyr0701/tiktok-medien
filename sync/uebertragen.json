@@ -370,8 +370,12 @@
    "art": "beitrag",
    "zeit": "2026-11-26T16:16:43+0000",
    "link": "https://www.instagram.com/p/DgNg4LGgmGd/",
-   "status": "fehler",
-   "fehler": "git commit: On branch main\nYour branch is up to date with 'origin/main'.\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\tsync/__pycache__/\n\nnothing added to commit but untracked files present (use \"git add\" to track)"
+   "status": "fertig",
+   "fehler": "git commit: On branch main\nYour branch is up to date with 'origin/main'.\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\tsync/__pycache__/\n\nnothing added to commit but untracked files present (use \"git add\" to track)",
+   "publish_id": "p_inbox_url~v2.7712763783063996438",
+   "format": "fotos",
+   "am": "2026-11-27T09:24",
+   "tiktok_status": "SEND_TO_USER_INBOX"
   },
   "18131942062868018": {
    "art": "story",
