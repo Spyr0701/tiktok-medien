@@ -380,8 +380,11 @@ def fotos_veroeffentlichen(fotos, name):
     for f in fotos:
         shutil.copy2(f, ziel)
     _git("add", name)
-    _git("commit", "-q", "-m", f"Bilder {name}")
-    _git("push", "-q")
+    # Beim zweiten Versuch liegen die Bilder schon im Repo. Ein Commit ohne Aenderung bricht ab und der
+    # Beitrag hing dann zwei Tage fest, bis das Aufraeumen den Ordner geloescht hat (26.11.2026).
+    if subprocess.run(["git", "-C", MEDIEN_REPO, "diff", "--cached", "--quiet"]).returncode:
+        _git("commit", "-q", "-m", f"Bilder {name}")
+        _git("push", "-q")
     urls = [MEDIEN_URL + name + "/" + os.path.basename(f) for f in fotos]
     for _ in range(36):  # GitHub Pages braucht meist unter einer Minute
         time.sleep(10)
@@ -438,6 +441,9 @@ def lauf(probe=False):
     if not offen:
         log("Nichts Neues auf Instagram.")
         return
+    # Beitraege vor Stories: TikTok nimmt nur 5 offene Entwuerfe je 24 Stunden an. Am 25.11.2026 haben
+    # sieben Stories das Kontingent gefuellt, der Beitrag vom 26.11. kam nicht mehr durch.
+    offen.sort(key=lambda m: (m["art"] != "beitrag", m["_zeit"]))
     token = None if probe else _access_token()
     for m in offen[:MAX_JE_LAUF]:
         name = f"{m['_zeit'].astimezone():%Y-%m-%d_%H%M}_{m['art']}_{m['id']}"
